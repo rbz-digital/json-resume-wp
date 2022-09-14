@@ -1,16 +1,16 @@
-h2.text-muted {
+.resume h2.text-muted {
     font-weight: normal;
     font-size: 1.5rem;
     font-family: inherit;
 }
-ul {
+.resume ul {
     margin: 0;
 }
-li {
+.resume li {
 	line-height: 1.8;
 	list-style: none;
 }
-li:before {
+.resume li:before {
 	content: "\f052";
 	float: left;
 	font: 13px Octicons;
@@ -19,116 +19,135 @@ li:before {
 	opacity: .1;
 	position: absolute;
 }
-blockquote {
+.resume blockquote {
 	border-left: 5px solid #e7e9ec;
 	font-size: 14px;
     padding: 0 20px;
 }
-em {
+.resume em {
 	color: #95a5a6;
 	font-weight: normal;
 	font-style: normal;
 }
-#content h3 {
+.resume h3 {
 	color: #f1c40f;
 	font-size: 26px;
 	margin-top: -4px;
 }
-#content aside {
+.resume aside {
 	text-align: right;
 	padding-right: 30px;
 }
-#profiles .network {
+.resume #profiles .network {
 	text-transform: capitalize;
 }
 
-#work .position,
-#volunteer .position {
+.resume #work .position,
+.resume #volunteer .position {
 	font-weight: bold;
 	margin-bottom: 8px;
 }
-#education .area {
+.resume #education .area {
 	font-weight: bold;
 }
-#education .area:before {
+.resume #education .area:before {
 	content: "\f0d7";
 	font: 16px 'Octicons';
 	margin-right: 6px;
 }
-#education .studyType {
+.resume #education .studyType {
 	margin-left: 25px;
 }
-#awards .summary,
-#publications .summary {
+.resume #awards .summary,
+.resume #publications .summary {
 	margin-top: 8px;
 }
-.pull-right {
+.resume .pull-right {
     float: right!important;
 }
-.courses_title {
+.resume .courses_title {
     margin: 1.5rem 0 0 !important;
 }
-#skills ul.keywords {
+.resume #skills ul.keywords {
     margin-bottom: 2rem;
+}
+.resume #work ul.highlights, 
+.resume #education ul.courses {
+    margin-bottom: 3rem;
+}
+.resume #certificates .url {
+	margin-bottom: 2rem;
+}
+.resume #education .summary {
+	padding: 1.5rem 0;
+}
+.resume #certificates h4.strike-through {
+    margin-bottom: 0;
+}
+.resume #certificates .url:before {
+	float: left;
+	font: 16px Octicons;
+	margin-top: 3px;
+	margin-right: 8px;
+	color: #f1c40f;
 }
 
 @media (min-width: 480px) {
-    .strike-through span + span {
+    .resume .strike-through span + span {
         font-size: 14px;
         margin-top: -10px;
         padding-left: 20px;
         right: 0;
     }
-	.strike-through {
+	.resume .strike-through {
 		border-top: 1px solid #f4f6f6;
-		height: 20px;
+		height: 1em;
 		margin-top: 12px;
-		margin-bottom: -2px;
 		position: relative;
 	}
-	.strike-through span,
-	.strike-through a {
+	.resume .strike-through span,
+	.resume .strike-through a {
 		background: #fff;
 		position: absolute;
 	}
-	.strike-through span:first-child {
+	.resume .strike-through span:first-child {
 		padding-right: 20px;
 		margin-top: -12px;
 	}
-	.strike-through span + span {
+	.resume .strike-through span + span {
 		margin-top: -10px;
 		padding-left: 20px;
 		right: 0;
 	}
 }
 @media (max-width: 768px) {
-	.col-sm-6:last-child {
+	.resume .col-sm-6:last-child {
 		margin-bottom: 0px;
 	}
-	#content aside {
+	.resume #content aside {
 		margin-bottom: 20px;
 		padding-right: 0;
 		text-align: left;
 	}
-	#publications .website a:before {
+	.resume #publications .website a:before {
 		content: "View publication";
 	}
 }
 @media (max-width: 480px) {
-	.date {
+	.resume .date {
 		margin-bottom: 5px;
 	}
-	.strike-through span:first-child {
+	.resume .strike-through span:first-child {
 		margin-bottom: 7px;
 	}
-	.strike-through span {
+	.resume .strike-through span {
 		display: block;
 	}	
-	#header {
+	.resume #header {
 		margin-bottom: 10px;
 		padding: 40px 0;
 	}
-	#actions {
+	.resume #actions {
 		display: none;
 	}
 }

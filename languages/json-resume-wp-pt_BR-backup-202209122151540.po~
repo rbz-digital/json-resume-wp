@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: JSON Resume for WordPress\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-09-12 03:38+0000\n"
-"PO-Revision-Date: 2022-09-14 19:37+0000\n"
+"PO-Revision-Date: 2022-09-12 05:44+0000\n"
 "Last-Translator: Rafael\n"
 "Language-Team: Português do Brasil\n"
 "Language: pt_BR\n"
@@ -15,27 +15,23 @@ msgstr ""
 "X-Loco-Version: 2.6.2; wp-6.0.2\n"
 "X-Domain: json-resume-wp"
 
-#: public/templates/simple.php:81
+#: public/templates/simple.php:76
 msgid "About"
 msgstr "Apresentação"
 
-#: public/templates/simple.php:232
-msgid "Certificate"
-msgstr "Certificados"
-
-#: public/templates/simple.php:209
+#: public/templates/simple.php:159
 msgid "Courses"
 msgstr "Módulos"
 
-#: public/templates/simple.php:177
+#: public/templates/simple.php:136
 msgid "Education"
 msgstr "Educação"
 
-#: public/templates/simple.php:15
+#: public/templates/simple.php:10
 msgid "Email"
 msgstr "E-mail"
 
-#: public/templates/simple.php:153
+#: public/templates/simple.php:112
 msgid "Highlights"
 msgstr "Destaques"
 
@@ -47,7 +43,7 @@ msgstr ""
 msgid "https://rafael.work"
 msgstr ""
 
-#: public/templates/simple.php:322
+#: public/templates/simple.php:267
 msgid "Interests"
 msgstr "Interesses"
 
@@ -55,19 +51,19 @@ msgstr "Interesses"
 msgid "JSON Resume for WordPress"
 msgstr ""
 
-#: public/templates/simple.php:298
+#: public/templates/simple.php:249
 msgid "Languages"
 msgstr "Línguas"
 
-#: public/templates/simple.php:20
+#: public/templates/simple.php:15
 msgid "Phone"
 msgstr "Telefone"
 
-#: public/templates/simple.php:262
+#: public/templates/simple.php:183
 msgid "Publications"
 msgstr "Publicações"
 
-#: public/templates/simple.php:282
+#: public/templates/simple.php:203
 msgid "Published by"
 msgstr "Autor: "
 
@@ -75,7 +71,7 @@ msgstr "Autor: "
 msgid "Rafael dos Santos"
 msgstr ""
 
-#: public/templates/simple.php:358
+#: public/templates/simple.php:286
 msgid "References"
 msgstr "Referências"
 
@@ -85,22 +81,18 @@ msgid ""
 "mostrá-lo"
 msgstr ""
 
-#: public/templates/simple.php:90
+#: public/templates/simple.php:219
 msgid "Skills"
 msgstr "Habilidades"
 
-#: public/templates/simple.php:188
-msgid "Suspended"
-msgstr "Interrompido"
-
-#: public/templates/simple.php:138
+#: public/templates/simple.php:97
 msgid "Today"
 msgstr "Hoje"
 
-#: public/templates/simple.php:25
+#: public/templates/simple.php:20
 msgid "Website"
-msgstr "Site / Portfólio"
+msgstr "Site"
 
-#: public/templates/simple.php:126
+#: public/templates/simple.php:85
 msgid "Work"
 msgstr "Experiência"

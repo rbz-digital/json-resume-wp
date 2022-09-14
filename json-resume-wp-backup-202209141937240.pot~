@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: JSON Resume for WordPress\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-09-14 19:37+0000\n"
+"POT-Creation-Date: 2022-09-12 05:43+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: \n"
@@ -16,27 +16,23 @@ msgstr ""
 "X-Loco-Version: 2.6.2; wp-6.0.2\n"
 "X-Domain: json-resume-wp"
 
-#: public/templates/simple.php:81
+#: public/templates/simple.php:76
 msgid "About"
 msgstr ""
 
-#: public/templates/simple.php:232
-msgid "Certificate"
-msgstr ""
-
-#: public/templates/simple.php:209
+#: public/templates/simple.php:159
 msgid "Courses"
 msgstr ""
 
-#: public/templates/simple.php:177
+#: public/templates/simple.php:136
 msgid "Education"
 msgstr ""
 
-#: public/templates/simple.php:15
+#: public/templates/simple.php:10
 msgid "Email"
 msgstr ""
 
-#: public/templates/simple.php:153
+#: public/templates/simple.php:112
 msgid "Highlights"
 msgstr ""
 
@@ -48,7 +44,7 @@ msgstr ""
 msgid "https://rafael.work"
 msgstr ""
 
-#: public/templates/simple.php:322
+#: public/templates/simple.php:267
 msgid "Interests"
 msgstr ""
 
@@ -56,19 +52,19 @@ msgstr ""
 msgid "JSON Resume for WordPress"
 msgstr ""
 
-#: public/templates/simple.php:298
+#: public/templates/simple.php:249
 msgid "Languages"
 msgstr ""
 
-#: public/templates/simple.php:20
+#: public/templates/simple.php:15
 msgid "Phone"
 msgstr ""
 
-#: public/templates/simple.php:262
+#: public/templates/simple.php:183
 msgid "Publications"
 msgstr ""
 
-#: public/templates/simple.php:282
+#: public/templates/simple.php:203
 msgid "Published by"
 msgstr ""
 
@@ -76,7 +72,7 @@ msgstr ""
 msgid "Rafael dos Santos"
 msgstr ""
 
-#: public/templates/simple.php:358
+#: public/templates/simple.php:286
 msgid "References"
 msgstr ""
 
@@ -86,22 +82,18 @@ msgid ""
 "mostrá-lo"
 msgstr ""
 
-#: public/templates/simple.php:90
+#: public/templates/simple.php:219
 msgid "Skills"
 msgstr ""
 
-#: public/templates/simple.php:188
-msgid "Suspended"
-msgstr ""
-
-#: public/templates/simple.php:138
+#: public/templates/simple.php:97
 msgid "Today"
 msgstr ""
 
-#: public/templates/simple.php:25
+#: public/templates/simple.php:20
 msgid "Website"
 msgstr ""
 
-#: public/templates/simple.php:126
+#: public/templates/simple.php:85
 msgid "Work"
 msgstr ""
