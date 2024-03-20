@@ -9,6 +9,22 @@ if ( ! class_exists( 'JSON_Resume_WP_Admin' ) ){
         public function __construct() {
             add_action( 'admin_menu', array( $this, 'json_resume_wp_add_plugin_page' ) );
             add_action( 'admin_init', array( $this, 'json_resume_wp_page_init' ) );
+
+            if(isset($_GET['page']) && $_GET['page'] === "json-resume-wp"):
+                add_action('admin_enqueue_scripts', array($this, 'enqueue_styles'));
+                add_action('admin_enqueue_scripts', array($this, 'enqueue_scripts'));
+            endif;
+        }
+
+        public function enqueue_styles() {
+            wp_enqueue_style('codeMirror', 'https://cdnjs.cloudflare.com/ajax/libs/codemirror/6.65.7/codemirror.min.css', 1);
+            wp_enqueue_style('customStyles', plugin_dir_url(__FILE__) . "assets/css/json-resume-wp-admin-styles.css", 1);
+        }
+
+        public function enqueue_scripts() {
+            wp_enqueue_script('codeMirror', 'https://cdnjs.cloudflare.com/ajax/libs/codemirror/6.65.7/codemirror.min.js', 1);
+            wp_enqueue_script('codeMirrorJson', 'https://cdnjs.cloudflare.com/ajax/libs/codemirror/6.65.7/mode/javascript/javascript.min.js', 1);
+            wp_enqueue_script('jsonResumeCustom', plugin_dir_url(__FILE__) . "assets/js/json-resume-wp-admin.js", 1);
         }
 
         public function json_resume_wp_add_plugin_page() {
@@ -58,6 +74,14 @@ if ( ! class_exists( 'JSON_Resume_WP_Admin' ) ){
             );
 
             add_settings_field(
+                'json-resume-shortcode', // id
+                'Shortcode', // title
+                array($this, 'resume_shortcode_callback'), // callback
+                'json-resume-wp-admin', // page
+                'json_resume_wp_setting_section' // section
+            );
+
+            add_settings_field(
                 'resume_json', // id
                 'JSON', // title
                 array( $this, 'resume_json_callback' ), // callback
@@ -88,9 +112,16 @@ if ( ! class_exists( 'JSON_Resume_WP_Admin' ) ){
             
         }
 
+        public function resume_shortcode_callback() {
+            echo
+            '<div class="shortcode-wrapper">
+                <span class="resume-shortcode">[my-resume]</span><span class="is-copied">Clique para copiar</span>
+            </div>';
+        }
+
         public function resume_json_callback() {
             printf(
-                '<textarea class="large-text" rows="25" name="json_resume_wp_option_name[resume_json]" id="resume_json">%s</textarea>',
+                '<textarea class="large-text" name="json_resume_wp_option_name[resume_json]" id="resume_json">%s</textarea>',
                 isset( $this->json_resume_wp_options['resume_json'] ) ? esc_attr( $this->json_resume_wp_options['resume_json']) : ''
             );
         }
