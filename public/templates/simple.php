@@ -38,11 +38,9 @@ $qtd_links = 12 / count( $links );
 
 ?>
 
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
 
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/octicons/4.4.0/font/octicons.css" integrity="sha512-EVOOYEOL2NPxYJOAxsqhYOHsgjNMhVwRxcIXgI1uCheCIdjYzyCQ7svGZgYm8mHYqaPtIuKza3uC88yB11bT3Q==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/octicons/4.4.0/octicons.min.css" integrity="sha512-vRKfvnKTq7yKgS+JJvcXv0WX7mQt/8rNDvABL+cDIPPjl4qUiZrfK24ORLn5nmaIvRy+ONQ1+0V0muCoqaQ/jQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link href="https://cdn.jsdelivr.net/npm/octicons@8.5.0/build/build.min.css" rel="stylesheet">
 
 <link rel="stylesheet" href="<?= JSON_Resume_WP_URL .'public/assets/css/json-resume-wp-styles.css' ?>">
 
