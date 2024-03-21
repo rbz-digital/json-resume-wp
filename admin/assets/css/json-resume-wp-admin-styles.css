@@ -1,0 +1,21 @@
+.shortcode-wrapper .resume-shortcode {
+    max-width: 12%;
+    padding: 12px;
+    text-align: center;
+    font-weight: 500;
+    background-color: #e2e2e2;
+}
+
+.shortcode-wrapper .resume-shortcode:hover {
+    cursor: pointer;
+    background-color: #bebebe;
+    transition: .4s;
+    -webkit-transition: .4s;
+    -moz-transition: .4s;
+    -ms-transition: .4s;
+    -o-transition: .4s;
+}
+
+.shortcode-wrapper .is-copied {
+    margin-left: 12px;
+}
